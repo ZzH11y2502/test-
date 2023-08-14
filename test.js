@@ -45,9 +45,16 @@ function bai_2() {
         document.getElementById("output5").innerHTML="So ban nhap on hon 100.";
     }
     // if (num1 >100&& num2 >100&&num3 >100&& num4 >100&& num5 >100){
-            var avg =(num1 + num2 + num3 + num4 +num5)/5;
-            console.log("🚀 ~ file: test.js:49 ~ bai_2 ~ num1 + num2 + num3 + num4 +num5:", num1 + num2 + num3 + num4 +num5)
-            output_exe2.innerHTML =`Gia tri trung binh: ${avg}` 
+        var avg1=0;
+             avg1 =(num1 + num2 + num3 + num4 + num5)/5;
+            document.getElementById(`output_exe2`).innerHTML ="Ket qua trung binh:"+avg1;
         // }
 
-}
+}   
+    function bai_3(){
+        var USD2VND =23500, USD, VND=0;
+        var USD_Tags = document.getElementById('moneyTranf');
+        USD = USD_Tags.value;
+        var VND = USD*USD2VND;
+        document.getElementById(`ketqua3`).innerHTML ="Số tiền quy đổi:  " + VND;
+    }
